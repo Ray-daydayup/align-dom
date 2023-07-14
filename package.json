@@ -1,0 +1,25 @@
+{
+  "name": "align-dom",
+  "version": "0.0.0",
+  "main": "dist/how-long-till-lunch.cjs.js",
+  "module": "dist/align-dom.esm.js",
+  "browser": "dist/align-dom.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^1.29.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
